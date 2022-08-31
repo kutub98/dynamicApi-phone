@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Hunter</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <style>
+        .input{
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            width: 30%;
+            height: 60px;
+            background-color: aqua;
+            margin: 5px auto;
+        }
+        .input button,
+        .input input{
+            padding: 10px;
+            margin: 7px auto;
+        }
+    </style>
+</head>
+<body>
+    
+        <section class="container">
+            <div class="row">
+                <header>
+                    <h1>Welcome to phone Hunter</h1>
+                </header>
+                <section class="input" >
+                    <input type="text" id="inputField" placeholder="search here...">
+                    <button id="SeacrhBtn">Search</button>
+                </section>
+                <section id="phoneContainerBox" class="row row-cols-1 row-cols-md-3 g-4">
+                </section>
+            </div>
+        </section>
+
+        <div class="container">
+            <section id="findOutPut" class="d-none ">
+                <h1 class="text-warning">Nothing found like this</h1>
+            </section>
+        </div>
+
+        <div id="loader" class="d-flex justify-content-center d-none">
+            <div class="spinner-border" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+          </div>
+
+        <section id="showAllButtonBox" class="justify-content-center text-center d-none">
+            <button id="showALL" class="bg-success text-white py-2 px-4">Show All</button>
+        </section>
+
+
+
+
+
+    
+    
+
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" id="ModalBody">
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Understood</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+   
+    <script src="js/index.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
