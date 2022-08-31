@@ -35,13 +35,13 @@ const displayAllPhone = (displayPhone, datalimit) => {
         const PhoneDiv = document.createElement('div');
         PhoneDiv.classList.add("col");
         PhoneDiv.innerHTML = `
-        <div class="card p-5">
+        <div class="card p-2">
         <img src="${element.image}" class="card-img-top img-fluid" alt="...">
         <div class="card-body">
           <h5 class="card-title">${element.phone_name}</h5>
-          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+         
 
-          <button onclick="showPhoneDetails('${element.slug}')" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> Launch static backdrop modal</button>
+          <button onclick="showPhoneDetails('${element.slug}')" data-bs-toggle="modal" data-bs-target="#staticBackdrop">More Details</button>
 
         </div>
         </div>
